@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import CounterContract from '../contracts/Counter.json';
 
 const Counter = ({ web3, account }) => {
@@ -40,7 +40,7 @@ const Counter = ({ web3, account }) => {
             setCount(parseInt(count));
             setDeployed(Deployed);
         })();
-    }, []);
+    }, [deployed, web3]);
 
     return (
         <div>

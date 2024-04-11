@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import Web3 from 'web3/dist/web3.min'; // NodeJs 환경에서만 쓸 수 있는 기능은 제외하고 최소기능만 가져오기
+import { useEffect, useState } from 'react';
+import Web3 from 'web3'; // NodeJs 환경에서만 쓸 수 있는 기능은 제외하고 최소기능만 가져오기
 
 // 커스텀 훅의 역할은 상태를 담고 있는 컴포넌트
 // 자주 사용하는 상태들은 커스텀 훅으로 빼서 사용 가능하다.
@@ -12,7 +12,7 @@ const useWeb3 = () => {
     useEffect(() => {
         // 즉시 실행 함수
         (async () => {
-            console.log('hello world useWeb3');
+            // console.log('hello world useWeb3');
             if (!window.ethereum) return;
 
             // rpc 통신 , Promise 객체
