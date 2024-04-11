@@ -33,7 +33,7 @@ const Counter = ({ web3, account }) => {
 
             // Contract를 호출할 때 필요한 값들을 인자값으로 전달
             // 인자값 2개 , (abi, CA)
-            const Deployed = new web3.eth.Contract(CounterContract.abi, '0xB275b8A06f34d9428CB34e5c1be036c863215db8');
+            const Deployed = new web3.eth.Contract(CounterContract.abi, '0x8A3e9460DCE2465373543F2f4A31B990b2A7c300');
 
             const count = await Deployed.methods.current().call();
 
