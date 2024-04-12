@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const Web3 = require('web3');
-const web3 = new Web3(new Web3.providers.HttpProvider('http://127.0.0.1:8545'));
+const web3 = new Web3(new Web3.providers.HttpProvider('http://34.64.149.122:8545'));
 const CounterContract = require('./contracts/Counter.json');
 /**
  * 프론트앤드에서 트랜잭션을 실행하고 싶은 경우 바로 메타마스크로 전달하지 않고, 
