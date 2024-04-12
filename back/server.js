@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const Web3 = require('web3');
 const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
-const CounterContract = require('./contracts/Counter.json');
+const CounterContract = require('./contract/Counter.json');
 /**
  * 프론트앤드에서 트랜잭션을 실행하고 싶은 경우 바로 메타마스크로 전달하지 않고, 
  * 프론트앤드에서 원하는 계정를 BODY에 넣어 백앤드로 호출하면 백앤드에서 트랜잭션 객체를 생성한 이후 객체를 전달해주고 
