@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import CounterContract from '../contracts/Counter.json';
+import axios from 'axios';
 
 const Counter = ({ web3, account }) => {
     const [count, setCount] = useState(0);
